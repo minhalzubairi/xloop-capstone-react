@@ -56,7 +56,7 @@ export default function LoginForm() {
               value={login}
               onChange={(e) => setLogin(e.target.value)}
               required
-              className="bg-[#F3FFF2] text-black border border-green-100 focus:border-[#43B581] focus:ring-0"
+              className="bg-[#F3FFF2] text-black border border-green-100 focus:border-[#68ae3c] focus:ring-0"
             />
           </div>
           <div className="mb-6">
@@ -66,21 +66,21 @@ export default function LoginForm() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="bg-[#F3FFF2] text-black border border-green-100 focus:border-[#43B581] focus:ring-0"
+              className="bg-[#F3FFF2] text-black border border-green-100 focus:border-[#68ae3c] focus:ring-0"
             />
           </div>
           {error && <p className="text-red-600 mb-4">{error}</p>}
           <Button
             type="submit"
             disabled={loading || !login || !password}
-            className="w-full bg-[#43B581] text-white hover:bg-[#36996B] rounded-full py-2 font-semibold transition-all duration-200"
+            className="w-full bg-[#68ae3c] text-white hover:bg-[#36996B] rounded-full py-2 font-semibold transition-all duration-200"
           >
             {loading ? "Signing in..." : "Sign In"}
           </Button>
           <div className="mt-6 text-center">
             <Link
               href="/lost-pass"
-              className="text-black hover:text-[#43B581] font-medium transition-colors"
+              className="text-black hover:text-[#68ae3c] font-medium transition-colors"
             >
               Forgot password?
             </Link>

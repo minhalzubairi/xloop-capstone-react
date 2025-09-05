@@ -4,6 +4,7 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Instagram, Twitter, Facebook } from "lucide-react";
 import Image from "next/image";
+import Header from "@/components/layout/header";
 
 // Sample Data
 const products = [
@@ -90,7 +91,7 @@ const testimonials = [
 ];
 
 // Accent color (fresh green)
-const accent = "bg-[#43B581] text-white hover:bg-[#36996B]";
+const accent = "bg-[#68ae3c] text-white hover:bg-[#36996B]";
 
 // Components
 function HeroSection() {
@@ -103,7 +104,7 @@ function HeroSection() {
 				Shop the best in organic produce, bakery, and pantry essentials. Healthy,
 				local, and always fresh.
 			</p>
-			<Button className="bg-[#43B581] text-white hover:bg-[#36996B] px-8 py-6 text-lg rounded-full shadow transition-all duration-200">
+			<Button className="bg-[#68ae3c] text-white hover:bg-[#36996B] px-8 py-6 text-lg rounded-full shadow transition-all duration-200">
 				Start Shopping
 			</Button>
 		</section>
@@ -140,7 +141,7 @@ function FeaturedProducts() {
 							<p className="text-md text-black">{product.price}</p>
 						</CardContent>
 						<CardFooter className="px-4 pb-4">
-							<Button className="bg-[#43B581] text-white hover:bg-[#36996B] w-full rounded-md transition-all duration-200">
+							<Button className="bg-[#68ae3c] text-white hover:bg-[#36996B] w-full rounded-md transition-all duration-200">
 								Add to Cart
 							</Button>
 						</CardFooter>
@@ -208,67 +209,25 @@ function TestimonialsSection() {
 	);
 }
 
-function Header() {
-	return (
-		<header className="w-full bg-white shadow-sm mb-8">
-			<div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-20">
-				<div className="flex items-center gap-2">
-					<Image src="/logo.svg" alt="FreshMart Logo" width={40} height={40} />
-					<span className="font-bold text-2xl text-black">FreshMart</span>
-				</div>
-				<nav className="hidden md:flex gap-8">
-					<a
-						href="/"
-						className="text-black hover:text-[#43B581] transition-colors font-medium"
-					>
-						Home
-					</a>
-					<a
-						href="/products"
-						className="text-black hover:text-[#43B581] transition-colors font-medium"
-					>
-						Products
-					</a>
-					<a
-						href="/about"
-						className="text-black hover:text-[#43B581] transition-colors font-medium"
-					>
-						About
-					</a>
-					<a
-						href="/contact"
-						className="text-black hover:text-[#43B581] transition-colors font-medium"
-					>
-						Contact
-					</a>
-				</nav>
-				<Button className="bg-[#43B581] text-white hover:bg-[#36996B] rounded-full px-5 py-2 font-semibold transition-all duration-200">
-					Cart
-				</Button>
-			</div>
-		</header>
-	);
-}
-
 function Footer() {
 	return (
 		<footer className="w-full py-10 mt-12 border-t border-green-100 bg-white flex flex-col items-center">
 			<div className="flex flex-wrap gap-8 mb-6">
 				<a
 					href="/about"
-					className="text-black hover:text-[#43B581] transition-colors"
+					className="text-black hover:text-[#68ae3c] transition-colors"
 				>
 					About
 				</a>
 				<a
 					href="/contact"
-					className="text-black hover:text-[#43B581] transition-colors"
+					className="text-black hover:text-[#68ae3c] transition-colors"
 				>
 					Contact
 				</a>
 				<a
 					href="/privacy"
-					className="text-black hover:text-[#43B581] transition-colors"
+					className="text-black hover:text-[#68ae3c] transition-colors"
 				>
 					Privacy
 				</a>
@@ -278,7 +237,7 @@ function Footer() {
 					href="https://instagram.com"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="text-green-400 hover:text-[#43B581] transition-colors"
+					className="text-green-400 hover:text-[#68ae3c] transition-colors"
 				>
 					<Instagram size={22} />
 				</a>
@@ -286,7 +245,7 @@ function Footer() {
 					href="https://twitter.com"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="text-green-400 hover:text-[#43B581] transition-colors"
+					className="text-green-400 hover:text-[#68ae3c] transition-colors"
 				>
 					<Twitter size={22} />
 				</a>
@@ -294,7 +253,7 @@ function Footer() {
 					href="https://facebook.com"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="text-green-400 hover:text-[#43B581] transition-colors"
+					className="text-green-400 hover:text-[#68ae3c] transition-colors"
 				>
 					<Facebook size={22} />
 				</a>
