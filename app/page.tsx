@@ -12,37 +12,37 @@ const products = [
 		id: 1,
 		name: "Fresh Avocados",
 		price: "$2.99 / lb",
-		image: "/products/avocado.jpg",
+		image: "/product-img.jpg",
 	},
 	{
 		id: 2,
 		name: "Organic Bananas",
 		price: "$1.29 / lb",
-		image: "/products/banana.jpg",
+		image: "/product-img.jpg",
 	},
 	{
 		id: 3,
 		name: "Cherry Tomatoes",
 		price: "$3.49 / box",
-		image: "/products/tomato.jpg",
+		image: "/product-img.jpg",
 	},
 	{
 		id: 4,
 		name: "Baby Spinach",
 		price: "$2.49 / bag",
-		image: "/products/spinach.jpg",
+		image: "/product-img.jpg",
 	},
 	{
 		id: 5,
 		name: "Whole Wheat Bread",
 		price: "$2.99",
-		image: "/products/bread.jpg",
+		image: "/product-img.jpg",
 	},
 	{
 		id: 6,
 		name: "Almond Milk",
 		price: "$3.99",
-		image: "/products/almond-milk.jpg",
+		image: "/product-img.jpg",
 	},
 ];
 
@@ -50,22 +50,22 @@ const categories = [
 	{
 		id: 1,
 		title: "Fresh Produce",
-		image: "/categories/produce.jpg",
+		image: "/product-img.jpg",
 	},
 	{
 		id: 2,
 		title: "Bakery",
-		image: "/categories/bakery.jpg",
+		image: "/product-img.jpg",
 	},
 	{
 		id: 3,
 		title: "Dairy & Eggs",
-		image: "/categories/dairy.jpg",
+		image: "/product-img.jpg",
 	},
 	{
 		id: 4,
 		title: "Pantry Staples",
-		image: "/categories/pantry.jpg",
+		image: "/product-img.jpg",
 	},
 ];
 
@@ -73,27 +73,25 @@ const testimonials = [
 	{
 		id: 1,
 		name: "Sam Patel",
-		avatar: "/avatars/sam.jpg",
+		avatar: "/product-img.jpg",
 		text: "The produce is always fresh and the delivery is quick. My go-to grocery store!",
 	},
 	{
 		id: 2,
 		name: "Maria Gomez",
-		avatar: "/avatars/maria.jpg",
+		avatar: "/product-img.jpg",
 		text: "Love the organic options and friendly service. Highly recommended!",
 	},
 	{
 		id: 3,
 		name: "Chris Lee",
-		avatar: "/avatars/chris.jpg",
+		avatar: "/product-img.jpg",
 		text: "Easy to order and great selection. The bakery items are delicious!",
 	},
 ];
 
-// Accent color (fresh green)
-const accent = "bg-[#68ae3c] text-white hover:bg-[#36996B]";
+const accent = "bg-[#0058A3] text-white hover:bg-[#003B64]";
 
-// Components
 function HeroSection() {
 	return (
 		<section className="w-full flex flex-col items-center justify-center py-16 px-4 sm:px-8 bg-white rounded-xl shadow-sm mb-12">
@@ -104,7 +102,7 @@ function HeroSection() {
 				Shop the best in organic produce, bakery, and pantry essentials. Healthy,
 				local, and always fresh.
 			</p>
-			<Button className="bg-[#68ae3c] text-white hover:bg-[#36996B] px-8 py-6 text-lg rounded-full shadow transition-all duration-200">
+			<Button className="bg-[#0058A3] text-white hover:bg-[#003B64] px-8 py-6 text-lg rounded-full shadow transition-all duration-200">
 				Start Shopping
 			</Button>
 		</section>
@@ -140,8 +138,8 @@ function FeaturedProducts() {
 							</h3>
 							<p className="text-md text-black">{product.price}</p>
 						</CardContent>
-						<CardFooter className="px-4 pb-4">
-							<Button className="bg-[#68ae3c] text-white hover:bg-[#36996B] w-full rounded-md transition-all duration-200">
+						<CardFooter className="px-4 pb-0">
+							<Button className="bg-[#0058A3] text-white hover:bg-[#003B64] w-full rounded-md transition-all duration-200">
 								Add to Cart
 							</Button>
 						</CardFooter>
@@ -215,19 +213,19 @@ function Footer() {
 			<div className="flex flex-wrap gap-8 mb-6">
 				<a
 					href="/about"
-					className="text-black hover:text-[#68ae3c] transition-colors"
+					className="text-black hover:text-[#0058A3] transition-colors"
 				>
 					About
 				</a>
 				<a
 					href="/contact"
-					className="text-black hover:text-[#68ae3c] transition-colors"
+					className="text-black hover:text-[#0058A3] transition-colors"
 				>
 					Contact
 				</a>
 				<a
 					href="/privacy"
-					className="text-black hover:text-[#68ae3c] transition-colors"
+					className="text-black hover:text-[#0058A3] transition-colors"
 				>
 					Privacy
 				</a>
@@ -237,7 +235,7 @@ function Footer() {
 					href="https://instagram.com"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="text-green-400 hover:text-[#68ae3c] transition-colors"
+					className="text-[#0058A3] hover:text-[#0058A3] transition-colors"
 				>
 					<Instagram size={22} />
 				</a>
@@ -245,7 +243,7 @@ function Footer() {
 					href="https://twitter.com"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="text-green-400 hover:text-[#68ae3c] transition-colors"
+					className="text-[#0058A3] hover:text-[#0058A3] transition-colors"
 				>
 					<Twitter size={22} />
 				</a>
@@ -253,12 +251,12 @@ function Footer() {
 					href="https://facebook.com"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="text-green-400 hover:text-[#68ae3c] transition-colors"
+					className="text-[#0058A3] hover:text-[#0058A3] transition-colors"
 				>
 					<Facebook size={22} />
 				</a>
 			</div>
-			<span className="text-xs text-green-400">
+			<span className="text-xs text-[#0058A3]">
 				&copy; {new Date().getFullYear()} FreshMart. All rights reserved.
 			</span>
 		</footer>
@@ -267,7 +265,7 @@ function Footer() {
 
 export default function Home() {
 	return (
-		<div className="font-sans min-h-screen bg-[#F3FFF2] flex flex-col items-center justify-center">
+		<div className="font-sans min-h-screen bg-[#E6F0FA] flex flex-col items-center justify-center">
 			<Header />
 			<div className="w-full max-w-7xl px-4 sm:px-8 mx-auto">
 				<HeroSection />

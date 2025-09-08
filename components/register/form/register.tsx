@@ -4,7 +4,6 @@ import axios from "axios";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Image from "next/image";
 import { Mars, Venus } from "lucide-react";
 
 export default function RegisterForm() {
@@ -49,7 +48,7 @@ export default function RegisterForm() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#F3FFF2] w-full">
+    <div className="min-h-screen flex items-center justify-center bg-[#E6F0FA] w-full">
       <div className="w-full max-w-xl bg-white rounded-xl shadow-md border-0 px-8 py-4">
         <div className="flex flex-col items-center mb-8">
           <h2 className="mt-4 text-2xl font-bold text-black">
@@ -70,7 +69,7 @@ export default function RegisterForm() {
                 type="button"
                 onClick={() => setGender("Male")}
                 className={`flex items-center px-4 py-2 border rounded cursor-pointer ${
-                  gender === "Male" ? "bg-green-600 text-white" : "bg-[#F3FFF2] text-black"
+                  gender === "Male" ? "bg-[#0058A3] text-white" : "bg-[#E6F0FA] text-black"
                 }`}
               >
                 <Mars className="mr-2" /> Male
@@ -79,7 +78,7 @@ export default function RegisterForm() {
                 type="button"
                 onClick={() => setGender("Female")}
                 className={`flex items-center px-4 py-2 border rounded cursor-pointer ${
-                  gender === "Female" ? "bg-green-600 text-white" : "bg-[#F3FFF2] text-black"
+                  gender === "Female" ? "bg-[#0058A3] text-white" : "bg-[#E6F0FA] text-black"
                 }`}
               >
                 <Venus className="mr-2" /> Female
@@ -93,7 +92,7 @@ export default function RegisterForm() {
               value={dob}
               onChange={(e) => setDob(e.target.value)}
               required
-              className="bg-[#F3FFF2] text-black border border-green-100 focus:border-[#68ae3c] focus:ring-0"
+              className="bg-[#E6F0FA] text-black border border-[#0058A3] focus:border-[#0058A3] focus:ring-0"
             />
           </div>
 
@@ -102,14 +101,14 @@ export default function RegisterForm() {
           <Button
             type="submit"
             disabled={loading || !firstName || !email || !password || !gender || !dob}
-            className="w-full bg-[#68ae3c] text-white hover:bg-[#36996B] rounded-full py-2 font-semibold transition-all duration-200"
+            className="w-full bg-[#0058A3] text-white hover:bg-[#003B64] rounded-full py-2 font-semibold transition-all duration-200"
           >
             {loading ? "Signing up..." : "Sign Up"}
           </Button>
 
           <div className="mt-6 text-center">
             Already have an account?{" "}
-            <Link href="/login" className="text-black hover:text-[#68ae3c] font-medium transition-colors">
+            <Link href="/login" className="text-black hover:text-[#0058A3] font-medium transition-colors">
               Sign In
             </Link>
           </div>
@@ -127,7 +126,7 @@ function InputField({ label, value, setValue, type = "text" }: any) {
         value={value}
         onChange={(e) => setValue(e.target.value)}
         required
-        className="bg-[#F3FFF2] text-black border border-green-100 focus:border-[#68ae3c] focus:ring-0"
+        className="bg-[#E6F0FA] text-black border border-green-100 focus:border-[## ] focus:ring-0"
       />
     </div>
   );
