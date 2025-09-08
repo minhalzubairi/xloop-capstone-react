@@ -16,30 +16,30 @@ export default function Header() {
 				<nav className="hidden md:flex gap-8">
 					<Link
 						href="/"
-						className="text-black hover:text-[#68ae3c] transition-colors font-medium"
+						className="text-black hover:text-[#0058A3] transition-colors font-medium"
 					>
 						Home
 					</Link>
 					<Link
 						href="/products"
-						className="text-black hover:text-[#68ae3c] transition-colors font-medium"
+						className="text-black hover:text-[#0058A3] transition-colors font-medium"
 					>
 						Products
 					</Link>
 					<Link
 						href="/about"
-						className="text-black hover:text-[#68ae3c] transition-colors font-medium"
+						className="text-black hover:text-[#0058A3] transition-colors font-medium"
 					>
 						About
 					</Link>
 					<Link
 						href="/contact"
-						className="text-black hover:text-[#68ae3c] transition-colors font-medium"
+						className="text-black hover:text-[#0058A3] transition-colors font-medium"
 					>
 						Contact
 					</Link>
 				</nav>
-				<Button className="bg-[#68ae3c] text-white hover:bg-[#36996B] rounded-full px-5 py-2 font-semibold transition-all duration-200">
+				<Button className="bg-[#0058A3] text-white hover:bg-[#003B64] rounded-full px-5 py-2 font-semibold transition-all duration-200">
 					<Link href="/login">
 						Login
 					</Link>
